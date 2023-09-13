@@ -1,5 +1,5 @@
 
-## Project Goal s
+## Project Goals
 Create end to end time series feature validation.  
 Will plug in BTCUSDT price and order book data from Binance  
 Use this for experimental iteration, then finetune.  
