@@ -82,12 +82,12 @@ Run this to export as env variables:
 Ubunut-based
 export MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow
 export MLFLOW_TRACKING_USERNAME=dennismutugi
-export MLFLOW_TRACKING_PASSWORD=79e81e16832481fbd4a16eb3f58bb5987477412e
+export MLFLOW_TRACKING_PASSWORD=
 
 Windows-based:
 set MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow
 set MLFLOW_TRACKING_USERNAME=dennismutugi
-set MLFLOW_TRACKING_PASSWORD=79e81e16832481fbd4a16eb3f58bb5987477412e
+set MLFLOW_TRACKING_PASSWORD=
 
 ```
 
