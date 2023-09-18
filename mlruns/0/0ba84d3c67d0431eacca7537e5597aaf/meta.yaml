@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/projects/pet/MLFlow/Feature_Eng/mlruns/0/0ba84d3c67d0431eacca7537e5597aaf/artifacts
+end_time: 1694993409914
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0ba84d3c67d0431eacca7537e5597aaf
+run_name: gaudy-shrew-798
+run_uuid: 0ba84d3c67d0431eacca7537e5597aaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694993405327
+status: 3
+tags: []
+user_id: Lenovo

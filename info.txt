@@ -1,3 +1,4 @@
 python -m venv features
 features\Scripts\activate
+cd Feature_Eng
 
