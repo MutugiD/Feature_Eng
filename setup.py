@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Feature_Eng"
 AUTHOR_USER_NAME = "MutugiD"
-SRC_REPO = "mlProject"
+SRC_REPO = "mlFeature"
 AUTHOR_EMAIL = "dennismutugi@gmail.com"
 
 
