@@ -73,7 +73,7 @@ open up you local host and port
 
 MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow \
 MLFLOW_TRACKING_USERNAME=dennismutugi \
-MLFLOW_TRACKING_PASSWORD=79e81e16832481fbd4a16eb3f58bb5987477412e \
+MLFLOW_TRACKING_PASSWORD=79e8 \
 python script.py
 
 Run this to export as env variables:
