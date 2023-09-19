@@ -2,9 +2,3 @@ python -m venv features
 features\Scripts\activate
 cd Feature_Eng
 
-
-
-MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow \
-MLFLOW_TRACKING_USERNAME=dennismutugi \
-MLFLOW_TRACKING_PASSWORD=79e81e16832481fbd4a16eb3f58bb5987477412e \
-python script.py 

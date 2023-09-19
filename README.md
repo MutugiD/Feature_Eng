@@ -21,7 +21,7 @@ Deploy on AWS EC2 with GitHUb Actions.
 ## dagshub tracking
 MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow \
 MLFLOW_TRACKING_USERNAME=dennismutugi \
-MLFLOW_TRACKING_PASSWORD=79e81e16832481fbd4a16eb3f58bb5987477412e \
+MLFLOW_TRACKING_PASSWORD= XXXXXXXXXXXXXXXXXXXX \
 python script.py  
 
 # How to run?
@@ -73,7 +73,7 @@ open up you local host and port
 
 MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow \
 MLFLOW_TRACKING_USERNAME=dennismutugi \
-MLFLOW_TRACKING_PASSWORD=79e8 \
+MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXX \
 python script.py
 
 Run this to export as env variables:
@@ -82,12 +82,12 @@ Run this to export as env variables:
 Ubunut-based
 export MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow
 export MLFLOW_TRACKING_USERNAME=dennismutugi
-export MLFLOW_TRACKING_PASSWORD=
+export MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXXXXXXX
 
 Windows-based:
 set MLFLOW_TRACKING_URI=https://dagshub.com/dennismutugi/Feature_Eng.mlflow
 set MLFLOW_TRACKING_USERNAME=dennismutugi
-set MLFLOW_TRACKING_PASSWORD=
+set MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXX
 
 ```
 
