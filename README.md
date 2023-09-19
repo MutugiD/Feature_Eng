@@ -159,9 +159,9 @@ set MLFLOW_TRACKING_PASSWORD=
 
     AWS_SECRET_ACCESS_KEY=
 
-    AWS_REGION = us-east-1
+    AWS_REGION = ap-northeast-2
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = 897569202249.dkr.ecr.ap-northeast-2.amazonaws.com/ml_runner
 
     ECR_REPOSITORY_NAME = ml_runner
 
