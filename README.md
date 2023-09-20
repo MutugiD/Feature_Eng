@@ -4,7 +4,7 @@ Create end to end time series feature validation.
 Will plug in BTCUSDT price+price_features from Binance for feature importance.     
 Use this for experimental iteration.    
 Build on MFLow Pipeline.
-Deploy on AWS EC2 with GitHUb Actions.  
+Deploy on AWS EC2 with GitHUb Actions. 
 
 Then use XGBoost/LSTM for forward looking price (for 15-30 minutes).  
 Add a live data feed vs the forecasted dashboard. 
