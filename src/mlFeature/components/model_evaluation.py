@@ -47,7 +47,7 @@ class ModelEvaluation:
             if tracking_url_type_store != "file":
                 # please refer to the doc for more information:
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
+                mlflow.sklearn.log_model(model, "model", registered_model_name="XGBoost")
             else:
                 mlflow.sklearn.log_model(model, "model")
 

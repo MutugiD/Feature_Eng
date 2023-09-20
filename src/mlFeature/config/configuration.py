@@ -86,19 +86,23 @@ class ConfigurationManager:
         )
         return model_trainer_config
 
-
-    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:      
         config = self.config.model_evaluation
-        params = self.params.ElasticNet
+        xgb_params = self.params.XGBRegressor  # XGBRegressor parameters
+        grid_search_params = self.params.GridSearchCV  # GridSearchCV parameters
         schema =  self.schema.TARGET_COLUMN
         create_directories([config.root_dir])
+
         model_evaluation_config = ModelEvaluationConfig(
             root_dir=config.root_dir,
             test_data_path=config.test_data_path,
             model_path = config.model_path,
-            all_params=params,
+            all_params= xgb_params,
             metric_file_name = config.metric_file_name,
             target_column = schema.name,
-            mlflow_uri="https://dagshub.com/dennismutugi/Feature_Eng.mlflow",  
+            mlflow_uri="https://dagshub.com/dennismutugi/Feature_Eng.mlflow",
+           
         )
+
         return model_evaluation_config
+
