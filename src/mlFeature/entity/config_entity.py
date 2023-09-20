@@ -26,8 +26,21 @@ class ModelTrainerConfig:
     train_data_path: Path
     test_data_path: Path
     model_name: str
-    alpha: float
-    l1_ratio: float
+    seed: int
+    n_estimators: int
+    max_depth: int
+    eval_metric: str
+    learning_rate: float
+    min_child_weight: int
+    subsample: float
+    colsample_bytree: float 
+    colsample_bylevel: float 
+    gamma: float
+    estimator: str
+    param_grid: dict 
+    cv: int
+    refit: bool
+    scoring: str
     target_column: str
     
 @dataclass(frozen=True)

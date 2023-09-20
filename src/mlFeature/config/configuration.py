@@ -54,10 +54,10 @@ class ConfigurationManager:
         )
         return data_transformation_config
     
-        
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.ElasticNet
+        xgb_params = self.params.XGBRegressor  # XGBRegressor parameters
+        grid_search_params = self.params.GridSearchCV  # GridSearchCV parameters
         schema =  self.schema.TARGET_COLUMN
         create_directories([config.root_dir])
 
@@ -66,14 +66,27 @@ class ConfigurationManager:
             train_data_path = config.train_data_path,
             test_data_path = config.test_data_path,
             model_name = config.model_name,
-            alpha = params.alpha,
-            l1_ratio = params.l1_ratio,
+            seed = xgb_params.seed,
+            n_estimators = xgb_params.n_estimators,
+            max_depth = xgb_params.max_depth,
+            eval_metric = xgb_params.eval_metric,
+            learning_rate = xgb_params.learning_rate, 
+            min_child_weight = xgb_params.min_child_weight,
+            subsample = xgb_params.subsample,
+            colsample_bytree = xgb_params.colsample_bytree,
+            colsample_bylevel = xgb_params.colsample_bylevel, 
+            gamma = xgb_params.gamma, 
+            estimator = grid_search_params.estimator, 
+            param_grid = grid_search_params.param_grid, 
+            cv = grid_search_params.cv,
+            refit = grid_search_params.refit,
+            scoring = grid_search_params.scoring,
             target_column = schema.name
             
         )
         return model_trainer_config
-    
-        
+
+
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config.model_evaluation
         params = self.params.ElasticNet

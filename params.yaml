@@ -1,3 +1,27 @@
-ElasticNet:
-  alpha: 0.175
-  l1_ratio: 0.1
+XGBRegressor:
+  seed: 100
+  n_estimators: 100
+  max_depth: 3
+  eval_metric: rmse
+  learning_rate: 0.1
+  min_child_weight: 1
+  subsample: 1
+  colsample_bytree: 1
+  colsample_bylevel: 1
+  gamma: 0
+
+GridSearchCV:
+  estimator: XGBRegressor  
+  param_grid:
+    n_estimators: [90]
+    max_depth: [7]
+    learning_rate: [0.03]
+    min_child_weight: [5, 21, 1]
+    #subsample: [0.8, 0.9, 1.0]
+    #colsample_bytree: [0.8, 0.9, 1.0]
+    #colsample_bylevel: [0.8, 0.9, 1.0]
+    #gamma: [0, 0.1, 0.2]
+  cv: 5
+  refit: True
+  scoring: neg_mean_squared_error
+

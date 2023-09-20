@@ -5,6 +5,9 @@ from mlFeature.pipeline.stage_03_data_transformation import DataTransformationPi
 from mlFeature.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
 from mlFeature.pipeline.stage_05_model_evaluation  import  ModelEvaluationTrainingPipeline
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 logger.info("Welcome to custome ML pipeline")
 
 STAGE_NAME = "Data Ingestion Stage"
@@ -37,7 +40,6 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-"""
 STAGE_NAME = "Model Trainer Stage"
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
@@ -48,7 +50,7 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-
+"""
 STAGE_NAME = "Model Evaluation Stage"
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
