@@ -106,7 +106,7 @@ set MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXX
 	2. AmazonEC2FullAccess
 
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 897569202249.dkr.ecr.ap-northeast-2.amazonaws.com/ml_runner
+    - Save the URI:	897569202249.dkr.ecr.ap-northeast-2.amazonaws.com/ml_runner
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -132,7 +132,10 @@ set MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXX
 	
 # 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
+## Activate inactive runner (In Ubuntu)  
+Under active runners, should be marked inactive, after shutting down a EC2. 
+access via SSH, then CD to the root DIR  
+>>> ~/actions-runner$ ./run.sh
 
 # 7. Setup github secrets:
 
